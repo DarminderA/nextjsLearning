@@ -9,7 +9,7 @@ const RestApiCalls = () => {
       // Get token
       const tokenEndpoint = '/services/iam/oauth/token';
       const tokenHeaders = new Headers({
-        'Authorization': 'Basic dmlld2VyX2FwcDpoZ1ZROTZHSTBudG4=',
+        'Authorization': 'Basic dmlld2VyX2FwcDpjaGFuZ2VpdA==',
         'Content-Type': 'application/x-www-form-urlencoded',
       });
 
@@ -52,7 +52,7 @@ const RestApiCalls = () => {
   }, []); // Empty dependency array to run the effect only once
 
   const callApi = async (endpoint, method, headers, body = null) => {
-    const apiUrl = `https://cloud.xyzreality.com${endpoint}`;
+    const apiUrl = `https://frontend.holosite.dev${endpoint}`;
 
     const requestOptions = {
       method: method,
